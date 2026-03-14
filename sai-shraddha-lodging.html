@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sai Shraddha Lodging - Hotel Veda Group</title>
+    <meta name="description" content="Sai Shraddha Lodging - Comfortable rooms, courteous service, and convenient location.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/logo.svg" alt="Hotel Veda Group" class="logo">
+                <div class="brand-text">
+                    <strong>Hotel Veda Group</strong>
+                    <span>Pure Veg Restaurants & Lodging</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <nav class="nav" id="site-nav">
+                <a href="index.html">Home</a>
+                <a href="veda-pure-veg.html">Veda Pure Veg</a>
+                <a href="vedant-pure-veg.html">Vedant Pure Veg</a>
+                <a href="sai-shraddha-lodging.html" class="active">Sai Shraddha Lodging</a>
+            </nav>
+            <button class="theme-switch" id="theme-switch" aria-label="Toggle theme">☀</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Sai Shraddha Lodging</h1>
+                <p>Comfortable rooms, courteous service, and easy access to local attractions.</p>
+            </div>
+        </section>
+        <section class="container" style="padding: 10px 0 60px;">
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-image" src="images/676926873.jpg" alt="Sai Shraddha Lodging">
+                    <div class="card-body">
+                        <h3>Rooms & Amenities</h3>
+                        <p>Clean, well-lit rooms with attached bathrooms, 24/7 hot water, Wi‑Fi, and room service.</p>
+                        <div class="chip">Lodging</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Timing</h3>
+                        <div class="info-tabs" role="tablist" aria-label="Check-in and check-out timings">
+                            <button class="tab-item active" role="tab" aria-selected="true">Check-in</button>
+                            <button class="tab-item" role="tab" aria-selected="false">Check-out</button>
+                        </div>
+                        <div class="tab-panel">
+                            <div class="info-row"><div class="info-label">Check-in</div><div class="info-value">12:00 PM</div></div>
+                            <div class="info-row"><div class="info-label">Check-out</div><div class="info-value">10:00 AM</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Contact</h3>
+                        <div class="info-tabs" role="tablist" aria-label="Contact options">
+                            <button class="tab-item active" role="tab" aria-selected="true">Phone</button>
+                            <button class="tab-item" role="tab" aria-selected="false">Email</button>
+                        </div>
+                        <div class="tab-panel">
+                            <div class="info-row"><div class="info-label">Phone</div><div class="info-value"><a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></div></div>
+                            <div class="info-row"><div class="info-label">Email</div><div class="info-value"><a href="mailto:reservations@hotelveda.example">reservations@hotelveda.example</a></div></div>
+                            <div class="info-row"><div class="info-label">Address</div><div class="info-value">To be updated</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="images/676926915.jpg" alt="Sai Shraddha room">
+                    <div class="caption">Deluxe Room</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/676926921.jpg" alt="Sai Shraddha room">
+                    <div class="caption">Superior Room</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/676926884.jpg" alt="Sai Shraddha lobby">
+                    <div class="caption">Lobby</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <p>© <span id="year"></span> Hotel Veda Group. All rights reserved.</p>
+            <p class="footer-meta">Developed by Pruthviraj Uddhav Suryawanshi • <a href="mailto:pusuryawanshi21@gmail.com">pusuryawanshi21@gmail.com</a></p>
+        </div>
+        <div class="footer-bottom">
+            <nav class="footer-nav">
+                <a href="mailto:reservations@hotelveda.example">Contact</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script defer src="scripts/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

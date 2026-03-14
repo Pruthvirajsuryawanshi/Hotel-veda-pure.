@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel Veda Group - Pure Veg & Lodging</title>
+    <meta name="description" content="Hotel Veda Group: Veda Pure Veg, Vedant Pure Veg, and Sai Shraddha Lodging. 100% pure vegetarian restaurants and comfortable lodging.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/logo.svg" alt="Hotel Veda Group" class="logo">
+                <div class="brand-text">
+                    <strong>Hotel Veda Group</strong>
+                    <span>Pure Veg Restaurants & Lodging</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <nav class="nav" id="site-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="veda-pure-veg.html">Veda Pure Veg</a>
+                <a href="vedant-pure-veg.html">Vedant Pure Veg</a>
+                <a href="sai-shraddha-lodging.html">Sai Shraddha Lodging</a>
+            </nav>
+            <button class="theme-switch" id="theme-switch" aria-label="Toggle theme">☀</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Pure Vegetarian Hospitality</h1>
+                <p>Experience delicious 100% vegetarian cuisine and comfortable stays across our properties.</p>
+                <div class="cta-row">
+                    <a class="btn" href="#properties">Explore Properties</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="properties" class="properties-section container">
+            <h2>Our Properties</h2>
+            <div class="card-grid">
+                <a class="card" href="veda-pure-veg.html">
+                    <img src="images/676926880.jpg" alt="Veda Pure Veg" class="card-image">
+                    <div class="card-body">
+                        <h3>Veda Pure Veg</h3>
+                        <p>Authentic vegetarian delicacies crafted with fresh ingredients.</p>
+                        <span class="chip">Pure Veg</span>
+                    </div>
+                </a>
+                <a class="card" href="vedant-pure-veg.html">
+                    <img src="images/676926877.jpg" alt="Vedant Pure Veg" class="card-image">
+                    <div class="card-body">
+                        <h3>Vedant Pure Veg</h3>
+                        <p>Family-friendly dining with a wide variety of Jain and vegan options.</p>
+                        <span class="chip">Pure Veg</span>
+                    </div>
+                </a>
+                <a class="card" href="sai-shraddha-lodging.html">
+                    <img src="images/676926873.jpg" alt="Sai Shraddha Lodging" class="card-image">
+                    <div class="card-body">
+                        <h3>Sai Shraddha Lodging</h3>
+                        <p>Comfortable rooms, courteous service, and easy access to local attractions.</p>
+                        <span class="chip">Lodging</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="images/676926905.jpg" alt="Veda Pure Veg dish">
+                    <div class="caption">Veda Pure Veg - Dish</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/676926891.jpg" alt="Vedant Pure Veg dish">
+                    <div class="caption">Vedant Pure Veg - Dish</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/676926915.jpg" alt="Sai Shraddha room">
+                    <div class="caption">Sai Shraddha Lodging - Room</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/676926909.jpg" alt="Additional gallery image">
+                    <div class="caption">Our Space</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <p>© <span id="year"></span> Hotel Veda Group. All rights reserved.</p>
+            <p class="footer-meta">Developed by Pruthviraj Uddhav Suryawanshi • <a href="mailto:pusuryawanshi21@gmail.com">pusuryawanshi21@gmail.com</a></p>
+        </div>
+        <div class="footer-bottom">
+            <nav class="footer-nav">
+                <a href="mailto:reservations@hotelveda.example">Contact</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script defer src="scripts/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

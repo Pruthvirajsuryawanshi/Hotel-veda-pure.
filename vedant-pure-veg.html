@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vedant Pure Veg - Hotel Veda Group</title>
+    <meta name="description" content="Vedant Pure Veg - family-friendly vegetarian dining with a wide variety of options.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="assets/logo.svg" alt="Hotel Veda Group" class="logo">
+                <div class="brand-text">
+                    <strong>Hotel Veda Group</strong>
+                    <span>Pure Veg Restaurants & Lodging</span>
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <nav class="nav" id="site-nav">
+                <a href="index.html">Home</a>
+                <a href="veda-pure-veg.html">Veda Pure Veg</a>
+                <a href="vedant-pure-veg.html" class="active">Vedant Pure Veg</a>
+                <a href="sai-shraddha-lodging.html">Sai Shraddha Lodging</a>
+            </nav>
+            <button class="theme-switch" id="theme-switch" aria-label="Toggle theme">☀</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Vedant Pure Veg</h1>
+                <p>Family-friendly dining with a wide variety of Jain and vegan options.</p>
+            </div>
+        </section>
+        <section class="container" style="padding: 10px 0 60px;">
+            <div class="card-grid">
+                <div class="card">
+                    <img class="card-image" src="images/676926877.jpg" alt="Vedant Pure Veg">
+                    <div class="card-body">
+                        <h3>About</h3>
+                        <p>Comfortable ambiance and a menu that brings together classics and seasonal specialties. Ideal for families and groups.</p>
+                        <div class="chip">Pure Veg</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Timings</h3>
+                        <div class="info-list">
+                            <div class="info-row"><div class="info-label">Lunch</div><div class="info-value">12:00 PM – 3:30 PM</div></div>
+                            <div class="info-row"><div class="info-label">Dinner</div><div class="info-value">7:00 PM – 10:30 PM</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Contact</h3>
+                        <div class="info-list">
+                            <div class="info-row"><div class="info-label">Phone</div><div class="info-value"><a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></div></div>
+                            <div class="info-row"><div class="info-label">Email</div><div class="info-value"><a href="mailto:reservations@hotelveda.example">reservations@hotelveda.example</a></div></div>
+                            <div class="info-row"><div class="info-label">Address</div><div class="info-value">To be updated</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="images/676926891.jpg" alt="Vedant dish">
+                    <div class="caption">Family Favorite</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/676926897.jpg" alt="Vedant dish">
+                    <div class="caption">Jain Option</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/676926923.jpg" alt="Vedant interior">
+                    <div class="caption">Dining Ambience</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <p>© <span id="year"></span> Hotel Veda Group. All rights reserved.</p>
+            <p class="footer-meta">Developed by Pruthviraj Uddhav Suryawanshi • <a href="mailto:pusuryawanshi21@gmail.com">pusuryawanshi21@gmail.com</a></p>
+        </div>
+        <div class="footer-bottom">
+            <nav class="footer-nav">
+                <a href="mailto:reservations@hotelveda.example">Contact</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script defer src="scripts/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
