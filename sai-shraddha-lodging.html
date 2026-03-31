@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0b0b20">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
-            <nav class="nav" id="site-nav">
+            <nav class="nav" id="site-nav" aria-label="Primary navigation">
                 <a href="index.html">Home</a>
                 <a href="veda-pure-veg.html">Veda Pure Veg</a>
                 <a href="vedant-pure-veg.html">Vedant Pure Veg</a>
@@ -34,13 +36,17 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero reveal">
             <div class="container">
                 <h1>Sai Shraddha Lodging</h1>
-                <p>Comfortable rooms, courteous service, and easy access to local attractions.</p>
+                <p>Comfortable rooms, courteous service, and easy access to local attractions for your stay in Aurangabad.</p>
+                <div class="cta-row">
+                    <a class="btn" href="tel:+91XXXXXXXXXX">Call to Book</a>
+                    <a class="btn-outline" href="mailto:reservations@hotelveda.example">Email Reservations</a>
+                </div>
             </div>
         </section>
-        <section class="container" style="padding: 10px 0 60px;">
+        <section class="container reveal" style="padding: 10px 0 60px;">
             <div class="card-grid">
                 <div class="card">
                     <img class="card-image" src="images/676926873.jpg" alt="Sai Shraddha Lodging">
@@ -54,11 +60,13 @@
                     <div class="card-body">
                         <h3>Timing</h3>
                         <div class="info-tabs" role="tablist" aria-label="Check-in and check-out timings">
-                            <button class="tab-item active" role="tab" aria-selected="true">Check-in</button>
-                            <button class="tab-item" role="tab" aria-selected="false">Check-out</button>
+                            <button class="tab-item active" role="tab" aria-selected="true" data-panel="panel-checkin">Check-in</button>
+                            <button class="tab-item" role="tab" aria-selected="false" data-panel="panel-checkout">Check-out</button>
                         </div>
-                        <div class="tab-panel">
+                        <div id="panel-checkin" class="tab-panel">
                             <div class="info-row"><div class="info-label">Check-in</div><div class="info-value">12:00 PM</div></div>
+                        </div>
+                        <div id="panel-checkout" class="tab-panel" hidden>
                             <div class="info-row"><div class="info-label">Check-out</div><div class="info-value">10:00 AM</div></div>
                         </div>
                     </div>
@@ -67,14 +75,16 @@
                     <div class="card-body">
                         <h3>Contact</h3>
                         <div class="info-tabs" role="tablist" aria-label="Contact options">
-                            <button class="tab-item active" role="tab" aria-selected="true">Phone</button>
-                            <button class="tab-item" role="tab" aria-selected="false">Email</button>
+                            <button class="tab-item active" role="tab" aria-selected="true" data-panel="panel-phone">Phone</button>
+                            <button class="tab-item" role="tab" aria-selected="false" data-panel="panel-email">Email</button>
                         </div>
-                        <div class="tab-panel">
+                        <div id="panel-phone" class="tab-panel">
                             <div class="info-row"><div class="info-label">Phone</div><div class="info-value"><a href="tel:+91XXXXXXXXXX">+91-XXXXXXXXXX</a></div></div>
-                            <div class="info-row"><div class="info-label">Email</div><div class="info-value"><a href="mailto:reservations@hotelveda.example">reservations@hotelveda.example</a></div></div>
-                            <div class="info-row"><div class="info-label">Address</div><div class="info-value">To be updated</div></div>
                         </div>
+                        <div id="panel-email" class="tab-panel" hidden>
+                            <div class="info-row"><div class="info-label">Email</div><div class="info-value"><a href="mailto:reservations@hotelveda.example">reservations@hotelveda.example</a></div></div>
+                        </div>
+                        <div class="info-row"><div class="info-label">Address</div><div class="info-value">To be updated</div></div>
                     </div>
                 </div>
             </div>
@@ -113,7 +123,6 @@
     </footer>
 
     <script defer src="scripts/main.js"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 

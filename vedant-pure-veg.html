@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0b0b20">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
-            <nav class="nav" id="site-nav">
+            <nav class="nav" id="site-nav" aria-label="Primary navigation">
                 <a href="index.html">Home</a>
                 <a href="veda-pure-veg.html">Veda Pure Veg</a>
                 <a href="vedant-pure-veg.html" class="active">Vedant Pure Veg</a>
@@ -34,13 +36,17 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero reveal">
             <div class="container">
                 <h1>Vedant Pure Veg</h1>
                 <p>Family-friendly dining with a wide variety of Jain and vegan options.</p>
             </div>
         </section>
-        <section class="container" style="padding: 10px 0 60px;">
+        <section class="section-intro reveal container">
+            <h2>Warm vegetarian hospitality</h2>
+            <p>Designed for families and groups, our menu blends classic tastes with seasonal specialties.</p>
+        </section>
+        <section class="container reveal" style="padding: 10px 0 60px;">
             <div class="card-grid">
                 <div class="card">
                     <img class="card-image" src="images/676926877.jpg" alt="Vedant Pure Veg">
@@ -72,7 +78,12 @@
             </div>
         </section>
 
-        <section class="gallery-section container">
+        <section class="section-intro reveal container">
+            <h2>Family dining highlights</h2>
+            <p>Relaxed seating, plenty of options, and thoughtful preparation for vegetarian guests.</p>
+        </section>
+
+        <section class="gallery-section container reveal">
             <h2>Gallery</h2>
             <div class="gallery-grid">
                 <div class="gallery-card">
@@ -105,7 +116,6 @@
     </footer>
 
     <script defer src="scripts/main.js"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 

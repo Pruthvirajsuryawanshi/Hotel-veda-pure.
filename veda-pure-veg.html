@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0b0b20">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
-            <nav class="nav" id="site-nav">
+            <nav class="nav" id="site-nav" aria-label="Primary navigation">
                 <a href="index.html">Home</a>
                 <a href="veda-pure-veg.html" class="active">Veda Pure Veg</a>
                 <a href="vedant-pure-veg.html">Vedant Pure Veg</a>
@@ -34,13 +36,17 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero reveal">
             <div class="container">
                 <h1>Veda Pure Veg</h1>
                 <p>Authentic vegetarian delicacies crafted with fresh ingredients and traditional flavors.</p>
             </div>
         </section>
-        <section class="container" style="padding: 10px 0 60px;">
+        <section class="section-intro reveal container">
+            <h2>Fresh vegetarian dining</h2>
+            <p>Enjoy a curated menu featuring North Indian, South Indian and Jain specialties served in a cozy setting.</p>
+        </section>
+        <section class="container reveal" style="padding: 10px 0 60px;">
             <div class="card-grid">
                 <div class="card">
                     <img class="card-image" src="images/676926901.jpg" alt="Veda Pure Veg">
@@ -86,7 +92,12 @@
             </div>
         </section>
 
-        <section class="gallery-section container">
+        <section class="section-intro reveal container">
+            <h2>Dining highlights</h2>
+            <p>Dedicated vegetarian cuisine, attentive service, and a warm environment for all guests.</p>
+        </section>
+
+        <section class="gallery-section container reveal">
             <h2>Gallery</h2>
             <div class="gallery-grid">
                 <div class="gallery-card">
@@ -119,7 +130,6 @@
     </footer>
 
     <script defer src="scripts/main.js"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 

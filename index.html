@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0b0b20">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -23,7 +25,7 @@
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </button>
-            <nav class="nav" id="site-nav">
+            <nav class="nav" id="site-nav" aria-label="Primary navigation">
                 <a href="index.html" class="active">Home</a>
                 <a href="veda-pure-veg.html">Veda Pure Veg</a>
                 <a href="vedant-pure-veg.html">Vedant Pure Veg</a>
@@ -34,17 +36,39 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero reveal">
             <div class="container">
                 <h1>Pure Vegetarian Hospitality</h1>
-                <p>Experience delicious 100% vegetarian cuisine and comfortable stays across our properties.</p>
+                <p>Experience delicious 100% vegetarian cuisine, warm lodging, and memorable service across our three welcoming properties.</p>
                 <div class="cta-row">
                     <a class="btn" href="#properties">Explore Properties</a>
+                    <a class="btn-outline" href="mailto:reservations@hotelveda.example">Reserve Now</a>
                 </div>
             </div>
         </section>
 
-        <section id="properties" class="properties-section container">
+        <section class="features-section container reveal">
+            <div class="section-intro">
+                <h2>Why choose Hotel Veda Group</h2>
+                <p>Three trusted properties delivering pure vegetarian food, family-friendly atmosphere, and convenient location support in Aurangabad.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>100% pure vegetarian</h3>
+                    <p>Every meal is made with plant-based ingredients, fresh spices, and thoughtful preparation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Comfort for every stay</h3>
+                    <p>Comfortable dining and lodging for travelers, families, and guests seeking quality hospitality.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Easy reservations</h3>
+                    <p>Book dining or lodging quickly with our contact details and dedicated support.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="properties" class="properties-section container reveal">
             <h2>Our Properties</h2>
             <div class="card-grid">
                 <a class="card" href="veda-pure-veg.html">
@@ -74,7 +98,7 @@
             </div>
         </section>
 
-        <section id="gallery" class="gallery-section container">
+        <section id="gallery" class="gallery-section container reveal">
             <h2>Gallery</h2>
             <div class="gallery-grid">
                 <div class="gallery-card">
@@ -111,7 +135,6 @@
     </footer>
 
     <script defer src="scripts/main.js"></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
 
