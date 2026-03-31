@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const isOpen = nav.classList.toggle('open');
       btn.setAttribute('aria-expanded', String(isOpen));
+      document.body.classList.toggle('nav-open', isOpen);
     });
 
     nav.querySelectorAll('a').forEach((link) => {
@@ -116,9 +117,32 @@ document.addEventListener('DOMContentLoaded', () => {
         if (nav.classList.contains('open')) {
           nav.classList.remove('open');
           btn.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
         }
       });
     });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      const openNav = document.querySelector('.nav.open');
+      if (openNav) {
+        openNav.classList.remove('open');
+        const toggle = openNav.closest('.site-header')?.querySelector('.nav-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+      }
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    const openNav = document.querySelector('.nav.open');
+    const toggle = document.querySelector('.nav-toggle');
+    if (openNav && toggle && !openNav.contains(event.target) && !toggle.contains(event.target)) {
+      openNav.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    }
   });
 
   setTheme(getSavedTheme());
